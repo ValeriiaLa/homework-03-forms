@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Пошук авто</h2>
+    <form action="https://fom.in.ua/echo" >
+
+        <label for="body_type">Тип кузова</label>
+        <select name="Тип кузова" id="body_type">
+            <option value="Седан">Седан</option>
+            <option value="Купе">Купе</option>
+            <option value="Кабріолет">Кабріолет</option>
+            <option value="Універсал">Універсал</option>
+            <option value="Родстер">Родстер</option>
+            <option value="Пікап">Пікап</option>
+            <option value="Лімузин">Лімузин</option>
+            <option value="Хетчбек">Хетчбек</option>
+            <option value="Ліфтбек">Ліфтбек</option>
+            <option value="Позашляховик">Позашляховик</option>
+            <option value="Кросовер">Кросовер</option>
+            <option value="Мінівен">Мінівен</option>
+            <option value="Мікровен">Мікровен</option>
+        </select>
+
+        <label for="car_brand">Марка авто</label>
+        <select name="Марка авто" id="car_brand">
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Land_Rover">Land Rover</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+        </select>
+
+        <label for="country">Країна виробник</label>
+        <select name="Країна виробник" id="country">
+            <option value="Німеччина">Німеччина</option>
+            <option value="Японія">Японія</option>
+            <option value="Франція">Франція</option>
+            <option value="США">США</option>
+            <option value="Чехія">Чехія</option>
+            <option value="Україна">Україна</option>
+            <option value="Італія">Італія</option>
+            <option value="Швеція">Швеція</option>
+            <option value="Англія">Англія</option>
+        </select><br><br>
+
+
+    <fieldset>
+        <legend>Ціна</legend>
+        <label for="price_from">Від:</label>
+        <input id="price_from" type="number" name="Ціна від" min="0">
+        <label for="price_to">До:</label>
+        <input id="price_to" type="number" name="Ціна до" min="0">
+        <select name="Валюта" id="price">
+            <option value="$">$</option>
+            <option value="€">€</option>
+            <option value="грн.">грн.</option>
+        </select>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Рік випуску</legend>
+        <label for="year_from">Від:</label>
+        <input id="year_from" type="number" name="Рік випуску від" min="1990" max="2023">
+        <label for="year_to">До:</label>
+        <input id="year_to" type="number" name="Рік випуску до" min="1990" max="2023">
+    </fieldset><br>
+
+        <fieldset>
+            <legend>Стан</legend>
+        <label for="condition1">Бита</label>
+        <input id="condition1" type="checkbox" name="бита">
+        <label for="condition2">У кредиті</label>
+        <input id="condition2" type="checkbox" name="у кредиті">
+        <label for="condition3">Нерозмитнена</label>
+        <input id="condition3" type="checkbox" name="нерозмитнена">
+    </fieldset><br>
+    
+    <fieldset>
+        <legend>Технічні характеристики</legend>
+        
+        <label for="fuel_type">Тип палива:</label>
+        <select name="Тип палива" id="fuel_type">
+            <option value="Бензин">Бензин</option>
+            <option value="Дизель">Дизель</option>
+            <option value="Газ">Газ</option>
+            <option value="Газ/Бензин">Газ/Бензин</option>
+            <option value="Гібрид">Гібрид</option>
+            <option value="Електро">Електро</option>
+        </select><br><br>
+        
+        <label for="gearbox">Тип коробки передач:</label>
+        <select name="Тип коробки передач" id="gearbox">
+            <option value="Ручна/Механіка">Ручна/Механіка</option>
+            <option value="Автомат">Автомат</option>
+            <option value="Типтронік">Типтронік</option>
+            <option value="Робот">Робот</option>
+            <option value="Варіатор">Варіатор</option>
+        </select><br><br>
+        <label for="color">Колір автомобіля:</label>
+        <input id="color" type="color" name="color">
+
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Комфорт</legend>
+        <label for="option1">Люк</label>
+        <input id="option1" type="checkbox" name="люк">
+        <label for="option2">Шкіряний салон</label>
+        <input id="option2" type="checkbox" name="шкіряний салон">
+        <label for="option3">Кондиціонер</label>
+        <input id="option3" type="checkbox" name="кондиціонер">
+        <label for="option4">Підігрів сидінь</label>
+        <input id="option4" type="checkbox" name="підігрів сидінь">
+        <label for="option5">Електросклопідйомники</label>
+        <input id="option5" type="checkbox" name="електросклопідйомники">
+    </fieldset>
+
+    <p>
+        <input type="reset" value="Скинути всі фільтри">
+        <input type="submit" value="Знайти автомобіль">
+    </p>
+
+    </form>
+
+</body>
+</html>
